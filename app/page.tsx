@@ -1,17 +1,20 @@
-import Image from "next/image";
+import Container from "@/components/ui/Container";
 
 export default function Home() {
   return (
-    <main className="min-h-screen flex items-center justify-center bg-white">
-      <div className="text-center">
-        <h1 className="text-5xl font-bold">
-          Welcome to Webnivers 🚀
-        </h1>
+    <main className="min-h-screen bg-white">
+      <Container>
+        <div className="py-32">
+          <h1 className="text-6xl font-bold">
+            Welcome to Webnivers
+          </h1>
 
-        <p className="mt-4 text-gray-600 text-lg">
-          Building the Future with AI, Automation & Software
-        </p>
-      </div>
+          <p className="mt-6 text-xl text-gray-600 max-w-2xl">
+            We engineer technical growth systems using websites,
+            funnels, automation and AI.
+          </p>
+        </div>
+      </Container>
     </main>
   );
 }
